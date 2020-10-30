@@ -19,7 +19,7 @@ In this project, I attempt to achieve the following:
 ## Motivation and Background
 
 <p align="center">
-<img src="" height="300" />
+<img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/Blog-Mining-CRM-Data-Segmentation.png?raw=true" height="200" />
 </p>
 
 ## Data Details
