@@ -1,0 +1,2 @@
+# OnlineRetailCustomerSegmentation
+Applying unsupervised machine learning algorithms to determine customer segmentation
