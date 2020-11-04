@@ -1,9 +1,13 @@
-# Online Retail Customer Segmentation 
 <p align="center">
-<img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/Customer-segmentation-performance-matrix.png?raw=true" width="600" height="300" />
+<img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/giftstore%20logo.png?raw=true" width="200" height="200" />
 </p>
 
+# Finding Giftware Shop's Customer Base
+
+Giftware Shop needs our help to understand their customers. Let's help understand their customer segementation by Leveraging Unsupervised Machine Learning Techniques.
+
 ## Overview
+
 
 ## Goals
 
