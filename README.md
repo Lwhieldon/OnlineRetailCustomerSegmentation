@@ -30,7 +30,7 @@ In this project, I attempt to achieve the following:
 
 <a href=https://archive.ics.uci.edu/ml/datasets/Online+Retail+II>UCI Machine Online Retail II Data Set</a>
 
-This dataset contains 1,067,371 transactions with 8 attributes explaining the instance. The transactions occurred for a UK-based and registered, non-store online retail between 1/12/2009 and 9/12/2011. 
+This dataset contains 525,461 transactions* with 8 attributes explaining the instance. The transactions occurred for a UK-based and registered, non-store online retail between 1/12/2009 and 9/12/2011. 
 
 <b>A few notes on the company:</b>
 <ul>
@@ -77,3 +77,4 @@ Libraries    : pandas, numpy, matplotlib, seaborn, sklearn
 Assignment Submitted     : November 2020
 </pre>
 
+*UCI machine learning repo indicates that there are 1,067,371 observations but data from source contains only 525,461.
