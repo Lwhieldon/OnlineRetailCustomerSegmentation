@@ -4,7 +4,7 @@
 
 # Understanding Giftstore Shop's Customer Base
 
-Giftstore Shop needs our help to better understand its customers. Let's explore unsupervised machine learning techniques to analyze its customer segments and provide helpful conclusions about its customers with Giftstore Shop's marketing team. The marketing team will use this information to improve their marketing compaigns to customers.
+Giftstore Shop needs our help to better understand its customers. Let's explore unsupervised machine learning techniques to analyze its customer segments and provide helpful conclusions about its customers with Giftstore Shop's marketing team. The marketing team will use this information to improve their marketing campaigns to customers.
 
 ## Overview & Background
 <br>
@@ -14,7 +14,7 @@ Giftstore Shop needs our help to better understand its customers. Let's explore 
 Customer retention & engagement is key in all business ventures. But in online retail, it is critical! In this repo, I pretend that I am a data scientist hired by UK-based <b>Giftstore Shop</b>'s marketing team to analyze & understand customer insights that will help enhance their marketing campaigns. The marketing team wants to increase website traffic and by proxy purchases made on the online retail site.
 <br>
 <br>
-We understand that Giftstore Shop is an online retailer located in the United Kingdom. They mainly sell "unique" gifts for all occasions: Birthdays, Holidays, etc. The data provided by Giftstore Shop's marketing team consists of online retail data describing the transactions and customers tagged to every customer. Their marketing team has tasked me with identifying overall customer segments and behaviors that these groups share so that the marketing team can tailor campaigns to these customers.
+We understand that Giftstore Shop is an online retailer located in the United Kingdom. They mainly sell "unique" gifts for all occasions: Birthdays, Holidays, etc. The data provided by Giftstore Shop's marketing team consists of online retail data describing the transactions and customers tagged to every customer. Their marketing team has tasked me with identifying overall customer segments and behaviors that these groups share so that the marketing team can tailor campaigns to their customers.
 <br>
 <br>
 
@@ -60,8 +60,8 @@ After we fit our clustering algorithms to our engineered datasets, we can lower 
 <br>
 By applying dimensionality reduction techniques using PCA (note we use PCA <b>AFTER</b> the data is fit to the model so that it does not affect the model's interpretation of the data), we observe that most customers are clustered together, with some trailing noise to the right of the visual. This could possibly be interpreted as two separate perpendicular clusters but in this analysis we will infer that it is one single cluster (for future analysis, we might want to look at other clustering algorithms that can detect perpedicular clusters):
 <ul>
-<li> We observe that <b>KMeans</b> broke a single cluster into 3 distinct regions, splitting the primary cluster into 3 equal parts;</li> 
-<li><b>DBScan</b> understood that most customers belong to a single cluster;</li> 
+<li> We observe that <b>KMeans</b> broke the single cluster into 3 distinct regions, splitting the primary cluster into 3 equal parts;</li> 
+<li><b>DBScan</b> understood that most customers belong to a single cluster (great job, DBScan!);</li> 
 <li><b>Spectral Clustering</b> identified that most customers belong to a single segment but still broke off the primary cluster into 2 larger groups to the right of the visual. I consider this the 'happy medium' between Kmeans & DBScan where there is still some presence of smaller clusters but not as much as KMeans. </li>
 </ul>
    
@@ -88,7 +88,7 @@ We can observe each cluster's behavior against our continuous features, demonstr
   <img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/DBSCANHistograms.png?raw=true" alt="DBscan" width="75%" height="75%">
   <img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/SCHistograms.png?raw=true" alt="Spectral Clustering"width="75%" height="75%">
 
-<b>DBScan</b> is recommended for further analysis; would like to compare DBScan to other clustering algorithms that can detect clusters that are perpendicular to one another on a 2D plane.
+<b>DBScan</b> is recommended for further analysis; I would like to compare DBScan to other clustering algorithms that can detect clusters that are perpendicular to one another on a 2D plane.
 
 <b>So what's next?</b> While we explored KMeans, I suggest that the marketing team conduct a campaign to draw more attention to the online retail site in general so that they can continue to attract new customers. However, the clusters indicate that retention could be improved so I recommend an additional campaign that markets to their long term wholesale customers. Perhaps provide discounts for these continued customers so that they come back to purchase again? 
 
