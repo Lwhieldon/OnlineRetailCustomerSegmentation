@@ -29,25 +29,43 @@ In this project, I attempt to achieve the following:
 <li> <b>Comparing Different Unsupervised Learning Models</b>: Comparing K Means, DBSCAN, and Spectral Clustering and analyze how they differentiate cluster patterns in the dataset.</li>
 </ol>
 
-## Outcomes of this Study
+## Outcomes and Conclusions of this Study
 
-After we fit our clustering algorithms to our engineered datasets, we can lower the dimensionality of the data onto a 2D plane to get a better understanding of our customer clusters. By applying dimensionality reduction techniques using PCA, we observe that most customer are clustered together, with some trailing noise to the right of the visual. We observe that KMeans broke a single cluster into 3 distinct regions; DBScan understood that most customers belong to a single cluster; Spectral Clustering identified that most customers belong to a single segment but still broke off the primary cluster into 2 larger groups to the right of the visual. 
+After we fit our clustering algorithms to our engineered datasets, we can lower the dimensionality of the data onto a 2D plane to get a better understanding of our customer clusters. By applying dimensionality reduction techniques using PCA.
+
+We observe that most customers are clustered together, with some trailing noise to the right of the visual:
+<ul>
+<li> We observe that <b>KMeans</b> broke a single cluster into 3 distinct regions (splitting the cluster into 3 distinct regions);</li> 
+<li><b>DBScan</b> understood that most customers belong to a single cluster;</li> 
+<li><b>Spectral Clustering</b> identified that most customers belong to a single segment but still broke off the primary cluster into 2 larger groups to the right of the visual. </li>
+</ul>
+   
 
 Here are the outcomes of each clustering algorithm shown in the visuals below:
 
 <div class="row">
   <div class="column">
-    <img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/KMEANS.png?raw=true" alt="KMeans" >
+    <img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/KMEANS.png?raw=true" alt="KMeans" width="75%" height="75%" >
   </div>
   <div class="column">
     <img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/DBSCAN.png?raw=true" alt="DBscan" >
   </div>
   <div class="column">
-    <img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/SPECTRALCLUSTER.png?raw=true" alt="Spectral Clustering">
+    <img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/SPECTRALCLUSTER.png?raw=true" alt="Spectral Clustering" width="75%" height="75%">
   </div>
 </div>
 
-KMeans & Spectral Clustering overfit the data: After we reduced the dimensionality by applying PCA and observing clusters, KMeans & Spectral Clustering was not able to detect that the majority of customers fell into a single segmentation. See side
+As we observe, KMeans & Spectral Clustering tended to favor a break out of customer segmentation based on who spent the most & who ; DBScan detected that most customers generally have the same spending patterns.
+
+
+  <img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/KMEANSHistograms.png?raw=true" alt="KMeans"  >
+
+  
+  <img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/DBSCANHistograms.png?raw=true" alt="DBscan" >
+
+
+  <img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/SCHistograms.png?raw=true" alt="Spectral Clustering" width="75%" height="75%">
+
 
 ## Data Details
 
