@@ -62,7 +62,7 @@ By applying dimensionality reduction techniques using PCA (note we use PCA <b>AF
 <ul>
 <li> We observe that <b>KMeans</b> broke a single cluster into 3 distinct regions (splitting the cluster into 3 equal-ish regions);</li> 
 <li><b>DBScan</b> understood that most customers belong to a single cluster;</li> 
-<li><b>Spectral Clustering</b> identified that most customers belong to a single segment but still broke off the primary cluster into 2 larger groups to the right of the visual. I consider this the 'happy medium' between Kmean & DBScan where there is still some presence of smaller clusters but not as much as KMeans. </li>
+<li><b>Spectral Clustering</b> identified that most customers belong to a single segment but still broke off the primary cluster into 2 larger groups to the right of the visual. I consider this the 'happy medium' between Kmeans & DBScan where there is still some presence of smaller clusters but not as much as KMeans. </li>
 </ul>
    
 
