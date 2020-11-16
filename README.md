@@ -79,9 +79,9 @@ Here are the outcomes of each clustering algorithm shown in the visuals below:
   </div>
 </div>
 
-As we observe, KMeans & Spectral Clustering tried to split the large cluster of customers based on customers who are new, who bought the most products, and who made a lot of purchases on the site. DBScan detected that most customers generally have the same spending patterns and lumped most all customers into a single cluster, which aligns to the visuals where we observe one distinct cluster. This also aligns with the general observation that most customers are wholesalers.
+As we observe, KMeans & Spectral Clustering tried to split the large cluster of customers based on customers who are new, who bought few products, and who made a minimal purchases on the site. DBScan detected that most customers generally have the same spending patterns and lumped most all customers into a single cluster, which aligns to the visuals where we observe one distinct cluster. This also aligns with the general observation that most customers are wholesalers.
 
-We can observe each cluster's behavior against our continuous features, demonstrating how each model interpreted customer segmentation. As stated above, KMeans & Spectral Clustering favored customers who bought a lot from the site & who were newer; DBScan determined that generally the spending patterns of customers are the same, which aligns with the primary customer cluster:
+We can observe each cluster's behavior against our continuous features, demonstrating how each model interpreted customer segmentation. As stated above, KMeans & Spectral Clustering favored customers who did not buy a lot from the site & who were newer; DBScan determined that generally the spending patterns of customers are the same, which aligns with the primary customer cluster:
 
 
   <img src="https://github.com/Lwhieldon/OnlineRetailCustomerSegmentation/blob/main/images/KMEANSHistograms.png?raw=true" alt="KMeans" width="75%" height="75%" >
@@ -90,7 +90,7 @@ We can observe each cluster's behavior against our continuous features, demonstr
 
 <b>DBScan</b> is recommended for further analysis; I would like to compare DBScan to other clustering algorithms that can detect clusters that are perpendicular to one another on a 2D plane.
 
-<b>So what's next?</b> While we explored KMeans, I suggest that the marketing team conduct a campaign to draw more attention to the online retail site in general so that they can continue to attract new customers. However, the clusters indicate that retention could be improved so I recommend an additional campaign that markets to their long term wholesale customers. Perhaps provide discounts for these continued customers so that they come back to purchase again? 
+<b>So what's next?</b> While we explored KMeans, I suggest that the marketing team conduct a campaign to draw more attention to the online retail site in general so that they can continue to attract new customers and additional revenue streams. However, the clusters indicate that retention could be improved so I recommend an additional campaign that markets to their long term wholesale customers. Perhaps provide discounts for these continued customers so that they come back to purchase again? 
 
 The marketing team is now equipped with information to help drive new campaigns that will hopefully meet their primary customer targets! This way, Giftstore Shop can continue to find new customers while also focusing on current customer retention (since these folks spend a ton!)
 
