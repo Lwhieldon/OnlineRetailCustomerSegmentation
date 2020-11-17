@@ -4,7 +4,10 @@
 
 # Understanding Giftstore Shop's Customer Base
 
+## Abstract 
+
 Giftstore Shop needs our help to better understand its customers. Let's explore unsupervised machine learning techniques to analyze its customer segments and provide helpful conclusions about its customers with Giftstore Shop's marketing team. The marketing team will use this information to improve their marketing campaigns to customers.
+We clean the data and aggregate the data to a customer level, we apply scaling to ensure that our features do not negatively affect the models. Lastly, we compare KMeans, DBSCAN, and Spectral Clustering models to see what model best fits the data. We uncover that DBSCAN performed the best at detecting customer segmentation than the other models.
 
 ## Overview & Background
 <br>
